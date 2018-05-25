@@ -1,0 +1,492 @@
+/* Prevents bounce when scrolling on top, but this disables the JavaScript's toggle function as we fixed the height of body, which is used to detect scrolling */
+/*
+html{
+	overflow: hidden;
+	height: 100%
+}
+
+body{
+	height: 100%;
+	overflow: auto;
+}
+*/
+/*
+html, body{
+	height: 100%;
+	overflow: hidden;
+}
+
+.main_container{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+*/
+
+
+
+
+
+.content{
+	padding: 40px 200px;
+}
+
+.btn{
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	
+	cursor: pointer;
+	
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.2s;
+	transition-delay: 0s;
+}
+
+.btn:hover{
+	color: black;
+	background-color: white;
+}
+
+.logo_name_in_text{
+	font-family: 'logoFont';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+/* VIDEO */
+.vid_container{
+	position: relative;
+}
+
+/* Style the video: 100% width and height to cover the entier window */
+.vid{
+	width: 100%;
+	
+	/* Position and center the video to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	vertical-align: middle;
+	
+	border: none;
+	outline: none;
+}
+
+/* Place text in the middle of the image */
+.vid_content{
+	width: 100%;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'articlesFont';
+}
+
+.vid_content h1{
+	font-size: 7vw;
+}
+
+.vid_content p{
+	font-size: 1.75vw;
+	margin-bottom: 20px;
+}
+
+.vid_btn{
+	padding: 1% 2%;
+	font-size: 1vw;
+}
+
+
+
+
+
+
+
+
+/* QUESTIONS */
+.questions_container{
+	width: 100%;
+}
+
+.left_img{
+	background-image: url('../img/homepage/improve_personal_life.jpg');
+}
+
+.right_img{
+	background-image: url('../img/homepage/live_life_your_way.jpg');
+}
+
+.left_img, .right_img{
+	width: 100%;
+	height: 33vw;
+	vertical-align: middle;
+	
+	opacity: 0.8;
+	
+	border: none;
+	outline: none;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.questions_content{
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	color: white;
+	font-family: 'articlesFont';
+}
+
+.questions_content h3, .learn_more_btn{
+	text-transform: uppercase;
+}
+
+.questions_content h3{
+	margin-bottom: 4%;
+	font-size: 1.8vw;
+}
+
+.questions_content p{
+	margin-bottom: 10%;
+	font-size: 1.17vw;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-50{
+	position: relative;
+	flex: 50%;
+	justify-content: center;
+	align-self: center;
+	text-align: center;
+}
+
+.learn_more_btn{
+	padding: 3.5% 6%;
+	font-size: 1vw;
+}
+
+
+
+
+
+
+/* EVENTS TYPE */
+.events_type_container{
+	width: 100%;
+}
+
+.events_type_wrapper{
+	position: relative;
+	
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.events_type_img{
+	width: 100%;
+	height: 38vw;
+	vertical-align: middle;
+	
+	opacity: 0.8;
+	
+	border: none;
+	outline: none;
+	
+	/*
+	background: url('../img/homepage/seminars.jpg') 0 60%, linear-gradient(to right, white, transparent);
+	*/
+	background: url('../img/homepage/seminars.jpg') 0 60%, linear-gradient(to right, white, white, white, lightgrey, grey, darkgrey, black);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: screen;
+}
+
+.events_type_content{
+	position: absolute;
+	
+	top: 50%;
+	left: 40%;
+	padding-right: 15%;
+	transform: translate(-50%, -50%);
+	
+	color: black;
+	font-family: 'articlesFont';
+	text-align: left;
+}
+
+.events_type_content h3{
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	font-size: 1.51vw;
+}
+
+.events_type_content p{
+	margin-bottom: 5%;
+	font-size: 1.289vw;
+}
+
+.events_btn_container{
+	text-align: left;
+}
+
+.events_btn{
+	text-transform: uppercase;
+	padding: 2% 20%;
+	font-size: 1vw;
+	
+	color: grey;
+	border-color: grey;
+}
+
+.events_btn:hover{
+	color: white;
+	background-color: grey;
+}
+
+
+
+
+
+
+/* PRODUCTS */
+.products_container{
+	width: 100%;
+}
+
+.products_wrapper{
+	position: relative;
+	
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.products_img{
+	width: 100%;
+	height: 38vw;
+	vertical-align: middle;
+	
+	opacity: 0.8;
+	
+	border: none;
+	outline: none;
+	/*
+	background: url('../img/homepage/learn_at_home.jpg') 0 70%, linear-gradient(to left, white, white, white, lightgrey, grey, darkgrey, black);
+	*/
+	background: url('../img/homepage/learn_at_home.jpg') 0 70%, linear-gradient(to right, black, white);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: screen;
+}
+
+.products_content{
+	width: 45%;
+	position: absolute;
+	
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	
+	color: black;
+	font-family: 'articlesFont';
+	text-align: left;
+}
+
+.products_content h3{
+	text-transform: uppercase;
+	margin-bottom: 2%;
+	font-size: 1.51vw;
+}
+
+.products_content p{
+	margin-bottom: 5%;
+	font-size: 1.289vw;
+}
+
+.products_btn_container{
+	text-align: left;
+}
+
+.products_btn{
+	text-transform: uppercase;
+	padding: 2% 20%;
+	font-size: 1vw;
+	
+	border-color: white;
+}
+
+
+
+
+
+
+
+/* ABOUT US */
+.about_us_transition_container{
+	width: 100%;
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 25px #E2E2E2;
+}
+
+.about_us_transition_container h1{
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.5vw;
+	font-family: 'articlesFont';
+	
+	padding-top: 4%; /* Transition feeling from products to about us. */
+	margin-bottom: 2%;
+}
+
+
+
+.about_container{
+	display: inline-flex;
+	
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	
+	margin: 0 5%;
+}
+
+.about_bryan{
+	flex-direction: row;
+}
+
+.about_james{
+	flex-direction: row-reverse;
+}
+
+.col-25{
+	width: 25%;
+	
+	order: 1;
+}
+
+.col-65{
+	width: 65%;
+	
+	order: 2;
+}
+
+.img_bryan{
+	background: url('../img/homepage/bryan.jpg') 0 0;
+}
+
+.img_james{
+	background: url('../img/homepage/james.jpg') 80% 100%;
+}
+
+.about_img{
+	/*
+	width: 100%;
+	*/
+	height: 28vw;
+	
+	opacity: 1;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	border-radius: 50%;
+}
+
+.about_content h3, .about_content h4, .about_content p{
+	color: black;
+	text-align: left;
+	font-family: 'articlesFont';
+	
+	padding-bottom: 2%;
+}
+
+.about_content h3{
+	text-transform: uppercase;
+	font-size: 1.51vw;
+}
+
+.about_content h4, p{
+	font-size: 1.289vw;
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+	
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+	
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+	
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+	
+}
+
+
+
+
+
+
+
+
+/* Include fonts */
+@font-face{
+	font-family: 'logoFont';
+	src: url('../fonts/da_font.otf');
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../fonts/Helvetica.ttf');
+}

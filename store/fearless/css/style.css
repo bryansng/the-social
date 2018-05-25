@@ -1,0 +1,19 @@
+.content{
+	padding: 40px 200px;
+}
+
+.content h1{
+	padding: 40px 0;
+	font-family: 'articlesFont';
+}
+
+.content p{
+	font-family: 'articlesFont';
+	padding-bottom: 30px;
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../../../fonts/Helvetica.ttf');
+}
+

@@ -1,0 +1,85 @@
+.footer_transition_container{
+	margin-top: 2%; /* Transition feeling from products to about us. */
+	padding-bottom: 4%; 
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 25px #E2E2E2;
+}
+
+
+
+/* FOOOOOTERRRS */
+.footer_container{
+	text-align: center;
+	
+	background-color: #555;
+}
+
+/* SOCIAL MEDIA */
+.sm_svg{
+	display: inline-block;
+	margin-left: 15px;
+	
+	/*
+	width: 49.4px;
+	*/
+	width: 3.98vw;
+	height: 0vw;
+	/*
+	height: 49.4px;
+	*/
+}
+
+.sm_container{
+	/*
+	padding: 30px;
+	*/
+	padding: 2.4vw;
+}
+
+.sm_circle{
+	color: black;
+	fill: currentColor;
+}
+.sm_path{
+	color: white;
+	fill: currentColor;
+}
+
+/* During hover of the social media icons */
+.sm_svg svg:hover{
+	cursor: pointer;
+}
+.sm_svg svg:hover .sm_circle{
+	color: white;
+}
+.sm_svg svg:hover .sm_path{
+	color: black;
+}
+
+/* COPYRIGHT */
+.copy_container{
+	text-align: center;
+	font-size: 1.289vw;
+}
+
+.copy_container a{
+	color: black;
+}
+
+.copy_container a:hover{
+	opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+

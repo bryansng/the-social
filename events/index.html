@@ -1,0 +1,423 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		{% include_relative resources.html %}
+		<title>Events - The Social</title>
+		<link rel="stylesheet" type="text/css" href="css/events.css"/>
+	</head>
+	
+	<body>
+		{% include header.html %}
+		
+		<div class="intro_container">
+			<div class="intro_wrapper">
+				<div class="intro_img"></div>
+				<div class="intro_content">
+					<h1>
+						T H E&nbsp;&nbsp; S O C I A L's Events
+					</h1>
+					<p>
+						Experience Us
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="transition_container"></div>
+		
+		<div class="content">
+			<input type="text" id="search_table_input" onkeyup="searchTable()" placeholder="Search for live program...">
+			
+			<div class="table_container">
+				<table id="program_table">
+					<tr>
+						<th>LIVE PROGRAM</th>
+						<th>DATE</th>
+						<th>CITY</th>
+						<th>COACH</th>
+						<th>PRICE (USD)</th>
+						<th>CLICK TO ORDER</th>
+					</tr>
+					
+					<!-- Europe -->
+					<tr>
+						<td rowspan="5" class="program_name_td" id="mastering-mindfulness">
+							<a href="mastering-mindfulness/coming-soon/">
+								<div class="program_name_image program_img_europe"></div>
+								<div class="program_name_text">
+									Europe Tour Bootcamp - Mastering Mindfulness
+								</div>
+							</a>
+						</td>
+						<td>May 21 - May 23, 2018</td>
+						<td>Dublin, Ireland</td>
+						<td>James & Bryan</td>
+						<td>$1,950</td>
+						<td>
+							<a href="mastering-mindfulness/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>May 24 - May 26, 2018</td>
+						<td>Cork, Ireland</td>
+						<td>James & Bryan</td>
+						<td>$1,950</td>
+						<td>
+							<a href="mastering-mindfulness/checkout/" class="a_deco">
+								<div class="click_order sign_up_1_left">SIGN UP - 1 Seat Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>May 27 - May 29, 2018</td>
+						<td>Galway, Ireland</td>
+						<td>James & Bryan</td>
+						<td>$1,950</td>
+						<td>
+							<a href="mastering-mindfulness/checkout/" class="a_deco">
+								<div class="click_order sign_up_2_left">SIGN UP - 2 Seats Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>May 30 - June 1, 2018</td>
+						<td>Limerick, Ireland</td>
+						<td>James & Bryan</td>
+						<td>$1,950</td>
+						<td>
+							<a href="mastering-mindfulness/checkout/" class="a_deco">
+								<div class="click_order sign_up">SIGN UP!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>June 2 - June 4, 2018</td>
+						<td>Belfast, UK</td>
+						<td>James & Bryan</td>
+						<td>$1,950</td>
+						<td>
+							<a href="mastering-mindfulness/checkout/" class="a_deco">
+								<div class="click_order sign_up">SIGN UP!</div>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- USA -->
+					<tr>
+						<td rowspan="8" class="program_name_td" id="talk-to-anyone">
+							<a href="talk-to-anyone/coming-soon/">
+								<div class="program_name_image program_img_usa"></div>
+								<div class="program_name_text">
+									USA Tour Bootcamp - Talk to Anyone
+								</div>
+							</a>
+						</td>
+						<td>June 8 - June 10, 2018</td>
+						<td>New York, New York, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>June 12 - June 14, 2018</td>
+						<td>Seattle, Washington, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>June 16 - June 20, 2018</td>
+						<td>Miami, Florida, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/checkout/" class="a_deco">
+								<div class="click_order sign_up_1_left">SIGN UP - 1 Seat Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>June 23 - June 25, 2018</td>
+						<td>Dallas, Texas, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/checkout/" class="a_deco">
+								<div class="click_order sign_up_1_left">SIGN UP - 1 Seat Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>June 30 - July 3, 2018</td>
+						<td>Los Angeles, California, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/checkout/" class="a_deco">
+								<div class="click_order sign_up_2_left">SIGN UP - 2 Seats Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>July 8 - July 14, 2018</td>
+						<td>Las Vegas, Nevada, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>July 17 - July 20, 2018</td>
+						<td>San Francisco, California, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/checkout/" class="a_deco">
+								<div class="click_order sign_up_2_left">SIGN UP - 2 Seats Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>July 26 - July 30, 2018</td>
+						<td>Honolulu, Hawaii, USA</td>
+						<td>James & Bryan</td>
+						<td>$1,199</td>
+						<td>
+							<a href="talk-to-anyone/checkout/" class="a_deco">
+								<div class="click_order sign_up">SIGN UP!</div>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- Canada -->
+					<tr>
+						<td rowspan="5" class="program_name_td" id="embracing-fear">
+							<a href="embracing-fear/coming-soon/">
+								<div class="program_name_image program_img_canada"></div>
+								<div class="program_name_text">
+									Canada Tour Bootcamp - Embracing Fear
+								</div>
+							</a>
+						</td>
+						<td>August 1 - August 3, 2018</td>
+						<td>Vancouver, Canada</td>
+						<td>James</td>
+						<td>$859</td>
+						<td>
+							<a href="embracing-fear/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>August 1 - August 3, 2018</td>
+						<td>Toronto, Canada</td>
+						<td>Bryan</td>
+						<td>$859</td>
+						<td>
+							<a href="embracing-fear/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>August 5 - August 7, 2018</td>
+						<td>Edmonton, Canada</td>
+						<td>James</td>
+						<td>$859</td>
+						<td>
+							<a href="embracing-fear/checkout/" class="a_deco">
+								<div class="click_order sign_up_2_left">SIGN UP - 2 Seats Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>August 5 - August 7, 2018</td>
+						<td>Ottawa, Canada</td>
+						<td>Bryan</td>
+						<td>$859</td>
+						<td>
+							<a href="embracing-fear/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>August 9 - August 13, 2018</td>
+						<td>Montreal, Canada</td>
+						<td>James & Bryan</td>
+						<td>$859</td>
+						<td>
+							<a href="embracing-fear/checkout/" class="a_deco">
+								<div class="click_order sign_up">SIGN UP!</div>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- ASIA -->
+					<tr>
+						<td rowspan="7" class="program_name_td" id="you-are-better-than-enough">
+							<a href="you-are-better-than-enough/coming-soon/">
+								<div class="program_name_image program_img_asia"></div>
+								<div class="program_name_text">
+									Asia Tour Bootcamp - You're Better Than Enough
+								</div>
+							</a>
+						</td>
+						<td>August 20 - August 23, 2018</td>
+						<td>Seoul, South Korea</td>
+						<td>James & Bryan</td>
+						<td>$1,399</td>
+						<td>
+							<a href="you-are-better-than-enough/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>September 1 - September 3, 2018</td>
+						<td>Tokyo, Japan</td>
+						<td>James & Bryan</td>
+						<td>$1,399</td>
+						<td>
+							<a href="you-are-better-than-enough/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>September 6 - September 9, 2018</td>
+						<td>Taipei, Taiwan</td>
+						<td>James & Bryan</td>
+						<td>$1,399</td>
+						<td>
+							<a href="you-are-better-than-enough/checkout/" class="a_deco">
+								<div class="click_order sign_up_2_left">SIGN UP - 2 Seats Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>September 12 - September 15, 2018</td>
+						<td>Hong Kong</td>
+						<td>James & Bryan</td>
+						<td>$1,399</td>
+						<td>
+							<a href="you-are-better-than-enough/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>September 18 - September 21, 2018</td>
+						<td>Bangkok, Thailand</td>
+						<td>James & Bryan</td>
+						<td>$1,399</td>
+						<td>
+							<a href="you-are-better-than-enough/checkout/" class="a_deco">
+								<div class="click_order sign_up_1_left">SIGN UP - 1 Seat Left!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>September 23 - September 26, 2018</td>
+						<td>Kuala Lumpur, Malaysia</td>
+						<td>James & Bryan</td>
+						<td>$1,399</td>
+						<td>
+							<a href="you-are-better-than-enough/checkout/" class="a_deco">
+								<div class="click_order sign_up">SIGN UP!</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>September 28 - September 30, 2018</td>
+						<td>Singapore</td>
+						<td>James & Bryan</td>
+						<td>$1,399</td>
+						<td>
+							<a href="you-are-better-than-enough/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					
+					<!-- AUSTRALIA/NZ -->
+					<tr>
+						<td rowspan="4" class="program_name_td" id="getting-out-of-your-own-way">
+							<a href="getting-out-of-your-own-way/coming-soon/">
+								<div class="program_name_image program_img_australia_nz"></div>
+								<div class="program_name_text">
+									Australia/NZ Tour Bootcamp - Getting Out of your Own Way
+								</div>
+							</a>
+						</td>
+						<td>October 4 - October 6, 2018</td>
+						<td>Melbourne, Australia</td>
+						<td>James & Bryan</td>
+						<td>$1,599</td>
+						<td>
+							<a href="getting-out-of-your-own-way/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>October 8 - October 10, 2018</td>
+						<td>Sydney, Australia</td>
+						<td>James & Bryan</td>
+						<td>$1,599</td>
+						<td>
+							<a href="getting-out-of-your-own-way/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>October 12 - October 14, 2018</td>
+						<td>Brisbane, Australia</td>
+						<td>James & Bryan</td>
+						<td>$1,599</td>
+						<td>
+							<a href="getting-out-of-your-own-way/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>October 18 - October 24, 2018</td>
+						<td>Auckland, New Zealand</td>
+						<td>James & Bryan</td>
+						<td>$1,599</td>
+						<td>
+							<a href="getting-out-of-your-own-way/coming-soon/" class="a_deco">
+								<div class="click_order wait_list">Wait List</div>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		{% include events/js/search_table_js.html %}
+		{% include events/js/nav_tab_js.html %}
+		{% include header_js.html %}
+		{% include footer.html %}
+	</body>
+
+</html>

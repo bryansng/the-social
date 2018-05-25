@@ -1,0 +1,258 @@
+/* Content */
+.content{
+	padding: 40px 50px;
+}
+
+
+
+/* EVENTS INTROOOOO */
+.intro_container{
+	width: 100%;
+}
+
+.intro_wrapper{
+	position: relative;
+	
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.intro_img{
+	width: 100%;
+	height: 33vw;
+	vertical-align: middle;
+	
+	opacity: 0.4;
+	
+	border: none;
+	outline: none;
+	
+	background: url('../img/seminar.jpg') 100% 35%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.intro_content{
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	text-align: center;
+}
+
+.intro_content h1{
+	font-family: 'logoFont';
+	padding-bottom: 1.6%;
+}
+
+.intro_content p{
+	font-family: 'articlesFont';
+	font-size: 2vw;
+}
+
+
+
+
+
+
+.transition_container{
+	width: 100%;
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 40px #E2E2E2;
+	
+	padding-top: 1%; /* Transition feeling */
+	/*margin-bottom: 2%;*/
+}
+
+
+
+
+
+
+/* Filter Bar */
+#search_table_input{
+	width: 100%;
+	padding: 1% 1.67% 1% 3.4%;
+	margin-bottom: 1.1%;
+	
+	font-size: 1.289vw;
+	font-family: 'articlesFont';
+	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddd;
+	
+	background: url('../img/search_icon.png') 0.25% 50%;
+	background-size: 3% 80%;
+	background-repeat: no-repeat;
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 25px #E2E2E2;
+}
+
+
+
+
+
+
+/* TABLE STYLE */
+.table_container{
+	overflow-x: auto;
+}
+
+.table_container table{
+	border: 3px solid black;
+	/*border-collapse: collapse;*/
+	
+	width: 100%;
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 25px #E2E2E2;
+}
+
+.table_container tr:nth-child(odd){
+	background-color: #dbdbdb;
+}
+
+.table_container th, .table_container td{
+	padding: 5px;
+	font-family: 'articlesFont';
+	/*white-space: nowrap;*/
+}
+
+.table_container th{
+	text-align: center;
+	font-weight: bold;
+	
+	background-color: #D3D3D3;
+}
+
+.table_container td{
+	text-align: left;
+}
+
+
+
+/* LIVE PROGRAM STYLING */
+.program_name_td{
+	background-color: #d1d1d1;
+}
+
+.program_img_europe{
+	background-image: url('../img/amsterdam_europe.jpg');
+}
+
+.program_img_usa{
+	background-image: url('../img/manhattan_usa.jpg');
+}
+
+.program_img_canada{
+	background-image: url('../img/toronto_canada.jpg');
+}
+
+.program_img_asia{
+	background-image: url('../img/singapore_asia.jpg');
+}
+
+.program_img_australia_nz{
+	background-image: url('../img/sydney_australia_nz.jpg');
+}
+
+.program_name_image{
+	width: 100%;
+	height: 16vw;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	
+	border-radius: 4px;
+}
+
+.program_name_text{
+	width: 100%;
+	text-align: center;
+}
+
+.program_name_td a{
+	color: blue;
+	font-weight: lighter;
+}
+
+.program_name_td a:hover{
+	color: black;
+}
+
+.program_name_td a p{
+	display: inline;
+}
+
+
+
+
+/* Style "CLICK TO ORDER" */
+.click_order{
+	text-shadow: 0px 0px 1px grey;
+	text-align: center;
+	
+	margin: 0 5px;
+	padding: 2px;
+	
+	/*border-style: solid;*/
+	border-style: groove;
+	border-radius: 6px;
+	border-width: 2px;
+	border-color: black;
+	
+	box-shadow: 0 0 1px 0 black, -1px -1px 1px 0 black inset;
+	
+	cursor: pointer;
+}
+
+.sign_up{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+.sign_up_1_left{
+	background-color: red;
+	font-weight: bolder;
+	color: white;
+}
+
+.sign_up_2_left{
+	background-color: orange;
+	font-weight: bolder;
+	color: black;
+}
+
+.wait_list{
+	background-color: #fff966;
+	font-weight: bold;
+	color: black;
+}
+
+
+
+
+
+/* Include fonts */
+@font-face{
+	font-family: 'logoFont';
+	src: url('../../fonts/da_font.otf');
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../../fonts/Helvetica.ttf');
+}

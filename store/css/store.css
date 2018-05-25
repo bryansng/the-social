@@ -1,0 +1,194 @@
+.content{
+	padding: 3.2vw 16vw;
+}
+
+
+
+
+
+
+/* STORE INTROOOOO */
+.intro_container{
+	width: 100%;
+}
+
+.intro_wrapper{
+	position: relative;
+	
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.intro_img{
+	width: 100%;
+	height: 33vw;
+	vertical-align: middle;
+	
+	opacity: 0.4;
+	
+	border: none;
+	outline: none;
+	
+	background: url('../img/checking_devices.jpg') 0 31%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.intro_content{
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	text-align: center;
+}
+
+.intro_content h1{
+	font-family: 'logoFont';
+	font-size: 2.589vw;
+	padding-bottom: 1.6%;
+}
+
+.intro_content p{
+	font-family: 'articlesFont';
+	font-size: 2vw;
+}
+
+
+
+
+
+
+.transition_container{
+	width: 100%;
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 40px #E2E2E2;
+	
+	padding-top: 1%; /* Transition feeling */
+	margin-bottom: 2%;
+}
+
+
+
+
+
+
+/* Create two unequal columns that float next to each other */
+/* Row - Gives uniform height */
+.row{
+	padding: 20px 0;
+}
+
+/* Add a box effect for programs */
+.program_container{
+	margin-bottom: 40px;
+	padding: 30px;
+	
+	box-shadow: 0 0 150px 0 #eaeaea;
+}
+
+.img_column{
+	float: left;
+	width: 35%;
+}
+
+.img_column img{
+	width: 100%;
+	
+	box-shadow: 0 0 100px 0 lightgrey;
+}
+
+.text_column{
+	float: left;
+	width: 65%;
+	
+	padding-left: 50px;
+}
+
+/* Text styling */
+.text_column h3, .text_column h4, .text_column p{
+	color: black;
+	font-family: 'articlesFont';
+}
+.text_column h3{
+	color: #0F92DA;
+	padding-bottom: 10px;
+	
+	display: inline-block;
+	
+	transition: opacity 0.2s ease-in-out 0s;
+}
+.text_column h3:hover{
+	opacity: 0.5;
+}
+.text_column h4{
+	padding-bottom: 10px;
+}
+
+
+/* Bottom right of program, links to more info or checkout. */
+.buy_info_container{
+	margin-top: 20px;
+	
+	float: right;
+	text-align: center;
+	
+	background-color: transparent;
+}
+
+/* Trolley */
+.trolley_container{
+	float: left;
+	transform: scale(0.6, 0.6);
+}
+
+/* Text beside Trolley (for more info) */
+.more_info_container{
+	float: left;
+	padding: 17px 5px;
+}
+.more_info_container p a{
+	color: #0F92DA;
+}
+
+
+/* On hover */
+.trolley_container svg, .more_info_container p{
+	transition: opacity 0.2s ease-in-out 0s;
+}
+.trolley_container svg:hover, .more_info_container p:hover{
+	opacity: 0.5;
+	box-shadow: 0 0 200px 0 #eaeaea;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after, .program_container:after, .trolly_container:after, .more_info_container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+/* Include fonts */
+@font-face{
+	font-family: 'logoFont';
+	src: url('../../fonts/da_font.otf');
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../../fonts/Helvetica.ttf');
+}

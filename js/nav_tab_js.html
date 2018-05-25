@@ -1,0 +1,32 @@
+<script>
+	// Adds an active class to the navigation tabs container when we are in the homepage.
+	var element = document.getElementById("home");
+	element.classList.add("active_for_nav_tab");
+	
+	// Adds a style class to the navigation tabs container only when we are in the homepage.
+	var nav_tabs = document.getElementById("nav_tabs_container");
+	nav_tabs.classList.add("nav_tabs_container_homepage");
+</script>
+
+<script>
+	// Adds a style class to the navigation tabs container, this style class sticks the container to the top of the screen when user scrolls.
+	
+	// When the user scrolls the page, execution this function.
+	window.onscroll = function() {userScroll()};
+	
+	// Get the header
+	var nav_tabs = document.getElementById("nav_tabs_container");
+	
+	// Get the offset position of the navbar.
+	var sticky = nav_tabs.offsetTop;
+	
+	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position.
+	function userScroll(){
+		if (window.pageYOffset > sticky || document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky){
+			nav_tabs.classList.remove("nav_tabs_container_homepage");
+		}
+		else{
+			nav_tabs.classList.add("nav_tabs_container_homepage");
+		}
+	}
+</script>

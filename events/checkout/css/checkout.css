@@ -1,0 +1,163 @@
+.content{
+	padding: 40px 200px;
+	font-family: 'articlesFont';
+}
+
+
+
+
+
+.container{
+	padding: 5px 20px 15px 20px;
+	border-radius: 3px;
+	
+	/* Lighter colour for bg */
+	background-color: white;
+	
+	/* Darker colour for blur */
+	box-shadow: 0 0 100px 0 #E2E2E2;
+}
+
+.container h1, h3{
+	margin-bottom: 10px;
+}
+
+.container hr{
+	margin: 10px auto 20px;
+	width: 90%;
+}
+
+.row_outer, .row_inner_info, .row_inner_card{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+}
+
+.col-25{
+	flex: 25%;	
+}
+
+.col-50{
+	flex: 50%;
+}
+
+.col-75{
+	flex: 75%;
+}
+
+.col-100{
+	flex: 100%;
+}
+
+.col-25{
+	padding: 0 6px;
+}
+
+.col-50, .col-75, .col-100{
+	padding: 0 16px;
+}
+
+input[type=text], select{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+label{
+	margin-bottom: 10px;
+	display: block;
+}
+
+.icon-container{
+	margin-bottom: 10px;
+}
+
+
+/* Agree checkbox */
+.agree{
+	color: blue;
+}
+
+.agree:hover{
+	opacity: 0.6;
+}
+
+
+/* Checkout button */
+.checkout_btn{
+	border-style: solid;
+	border-color: grey;
+	border-width: 2px;
+	border-radius: 3px;
+	
+	cursor: pointer;
+	display: none;
+	
+	color: grey;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.2s;
+	transition-delay: 0s;
+	
+	margin: 10px 0;
+	width: 100%;
+	height: 3.5vw;
+	background-color: transparent;
+}
+
+.checkout_btn:hover{
+	color: white;
+	background-color: grey;
+}
+
+
+
+
+span.price{
+	float: right;
+	color: grey;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px){
+  .row_outer{
+    flex-direction: column-reverse;
+  }
+  
+  .row_inner_info{
+	  flex-direction: column;
+  }
+  
+  .row_inner_card{
+	  flex-direction: column, row-reverse;
+  }
+  
+  .col-25{
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+/* Include fonts */
+@font-face{
+	font-family: 'logoFont';
+	src: url('../../../fonts/da_font.otf');
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../../../fonts/Helvetica.ttf');
+}

@@ -1,0 +1,96 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		{% include_relative resources.html %}
+		<title>Contact - The Social</title>
+		<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+	</head>
+	
+	<body>
+		{% include header.html %}
+		
+		<div class="intro_container">
+			<div class="intro_wrapper">
+				<div class="intro_img"></div>
+				<div class="intro_content">
+					<h1>
+						T H E&nbsp;&nbsp; S O C I A L's Contact
+					</h1>
+					<p>
+						Your Source for Help
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="transition_container"></div>
+		
+		<div class="container">
+			<div class="header">
+				<h2>CONTACT US</h2>
+				<p>Swing by for a cup of coffee, or leave us a message:</p>
+			</div>
+			<div class="row">
+				<div class="column">
+					<div id="map"></div>
+				</div>
+				<div class="column">
+					<form action="../" method="POST">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.." required/>
+						
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name.." required/>
+						
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email" placeholder="Your email.." required/>
+						
+						<label for="countryId">Country</label>
+						<select name="country" class="countries order-alpha presel-byip" id="countryId">
+						<option value="">Select Country</option>
+						</select>
+						
+						<label for="stateId">State or Province</label>
+						<select name="state" class="states order-alpha" id="stateId">
+							<option value="">Select State/Province</option>
+						</select>
+						
+						<label for="cityId">City</label>
+						<select name="city" class="cities order-alpha" id="cityId">
+							<option value="">Select City</option>
+						</select>
+						
+						<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+						<script src="//geodata.solutions/includes/countrystatecity.js"></script>
+						
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something..."></textarea>
+						
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Initialize Google Maps -->
+		<script>
+		function daMap(){
+			var daCenter = new google.maps.LatLng(53.309298, -6.223868);
+			var mapCanvas = document.getElementById("map");
+			var mapOptions = {center: daCenter, zoom: 12};
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+			var marker = new google.maps.Marker({position: daCenter});
+			marker.setMap(map);
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1njnqeZlI3MO-k9ghCwuuroCQWuvYef4&callback=daMap"></script>
+		
+		{% include_relative js/nav_tab_js.html %}
+		
+		{% include header_js.html %}
+		{% include footer.html %}
+	</body>
+
+</html>

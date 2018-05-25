@@ -1,0 +1,58 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		{% include_relative resources.html %}
+		<title>Checkout - You are Better than Enough - The Social</title>
+		<link rel="stylesheet" type="text/css" href="../../checkout/css/checkout.css"/>
+	</head>
+	
+	<body>
+		{% include header.html %}
+		
+		<div class="content">
+			<div class="row_outer">
+				<div class="col-75">
+					<div class="container">
+						<h1>Payment Information</h1>
+						<form action="../../../" method="POST">
+							{% include events/checkout/personal_info.html %}
+							<hr>
+							{% include events/checkout/credit_card_info.html %}
+						</form>
+					</div>
+				</div>
+				
+				<div class="col-25">
+					<div class="container">
+						<h3>Cart
+							<span class="price" style="color:black">
+								<i class="fa fa-shopping-cart"></i>
+								<b>1</b>
+							</span>
+						</h3>
+						<p>
+							<a href="../../#you-are-better-than-enough" style="color: blue">You're Better than Enough</a>
+							<span class="price">$1,399</span>
+						</p>
+						<hr>
+						<p>
+							Total
+							<span class="price" style="color:black">
+								<b class="ttl_cost">$1,399</b>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		{% include events/js/nav_tab_js.html %}
+		
+		{% include header_js.html %}
+		{% include footer.html %}
+	</body>
+
+</html>

@@ -1,0 +1,49 @@
+/* Content */
+.content{
+	padding: 5% 15%;
+	
+	font-family: 'articlesFont';
+	font-size: 120%;
+}
+
+.content h2{
+	margin-bottom: 2%;
+}
+
+.content h3{
+	padding-bottom: 1%;
+}
+
+.content p{
+	padding-bottom: 3%
+}
+
+.content ul{
+	padding-bottom: 0.8%;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.content ol li{
+	padding-bottom: 0.1%;
+}
+
+
+
+
+
+
+
+
+/* Include fonts */
+@font-face{
+	font-family: 'logoFont';
+	src: url('../fonts/da_font.otf');
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../fonts/Helvetica.ttf');
+}

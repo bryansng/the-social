@@ -1,0 +1,31 @@
+<script>
+	// Set date we're counting down to.
+	var countDownDate = new Date("August 31, 2018 12:34:56").getTime();
+	
+	// Update count down once every second.
+	var timer = setInterval(updateTimer, 1000); // 1000 milliseconds = 1 second.
+	
+	
+	function updateTimer() {
+		// Get today's date and time, in terms of milliseconds.
+		var now = new Date().getTime();
+		
+		// Find the difference between now and the count down date.
+		var difference = countDownDate - now;
+		
+		// Calculation for days, hours, minutes and seconds.
+		var days = Math.floor(difference / (1000*60*60*24));
+		var hours = Math.floor((difference % (1000*60*60*24)) / (1000*60*60));
+		var minutes =  Math.floor((difference % (1000*60*60)) / (1000*60));
+		var seconds = Math.floor((difference % (1000*60)) / 1000);
+		
+		// Element with id="countDownTime" is used to display results.
+		document.getElementById("countDownTime").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+		
+		// If the count down is finished, write some text.
+		if (difference < 0){
+			clearInterval(timer);
+			document.getElementById("countDownTime").innerHTML = "EXPIRED";
+		}
+	}
+</script>

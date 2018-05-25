@@ -1,0 +1,53 @@
+/* Background image cover whole page */
+body, html{
+	height: 100%;
+}
+
+.background_img{
+	position: relative;
+	height: 100%;
+	
+	background-image: url('../img/under_construction.jpg');
+	background-position: center;
+	background-size: cover;
+	
+	opacity: 0.5;
+}
+
+.middle_text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 250%;
+}
+
+.middle_text h1, h3{
+	margin-bottom: 10px;
+}
+
+.middle_text hr{
+	margin: auto;
+	margin-bottom: 5px;
+	width: 40%;
+}
+
+
+
+
+
+/* Include fonts */
+@font-face{
+	font-family: 'logoFont';
+	src: url('../../../fonts/da_font.otf');
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../../../fonts/Helvetica.ttf');
+}
