@@ -1,0 +1,203 @@
+/* ARTICLES INTROOOOO */
+.intro_container{
+	width: 100%;
+}
+
+.intro_wrapper{
+	position: relative;
+	
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.intro_img{
+	width: 100%;
+	height: 33vw;
+	vertical-align: middle;
+	
+	opacity: 0.4;
+	
+	border: none;
+	outline: none;
+	
+	background: url('../img/take_notes.jpg') 100% 35%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.intro_content{
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	text-align: center;
+}
+
+.intro_content h1{
+	font-family: 'logoFont';
+	font-size: 2.589vw;
+	
+	padding-bottom: 1.6%;
+}
+
+.intro_content p{
+	font-family: 'articlesFont';
+	font-size: 1.289vw;
+}
+
+
+
+
+
+
+.transition_container{
+	width: 100%;
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 40px #E2E2E2;
+	
+	padding-top: 1%; /* Transition feeling */
+	margin-bottom: 2%;
+}
+
+
+
+
+
+
+
+/* CATEGORYYYY */
+.select_container{
+	text-align: center;
+	padding: 1.25% 2.5%;
+	
+	/* Lighter colour for bg */
+	background-color: #EAEAEA;
+	/* Darker colour for blur */
+	box-shadow: 0 0 150px 25px #E2E2E2;
+}
+
+.select_container select{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	
+	padding: 10px 20px;
+	
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+/* Create two unequal columns that float next to each other */
+/* Row - Gives uniform height */
+.row{
+	background-color: transparent;
+	padding: 20px 0;
+}
+
+/* Column */
+.column{
+	float: left;
+	width: 33.33%;
+}
+
+/* Add a card effect for articles */
+.card{
+	background-color: transparent;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+/* Fake image */
+.card a img{
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+/* Card text styling */
+.card a h2, .card a h3, .card a h5{
+	color: black;
+	font-family: 'articlesFont';
+}
+
+.card a p{
+	color: grey;
+	font-family: 'articlesFont';
+}
+
+/* Clear floats after the columns */
+.row::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px){
+	.column{
+		width: 100%;
+		padding: 0;
+	}
+}
+
+
+
+
+
+/* PAGINATIONNNNN */
+.pagination{
+	margin: 10px 40px;
+	padding-bottom: 20px; /* A distance away from footer. */
+	text-align: center;
+}
+
+.pagination a{
+	color: black;
+	
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active{
+	background-color: #555;
+	color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active){
+	background-color: #DDD;
+}
+
+
+
+
+
+/* Include fonts */
+@font-face{
+	font-family: 'logoFont';
+	src: url('../../fonts/da_font.otf');
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../../fonts/Helvetica.ttf');
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		{% include_relative resources.html %}
+		<title>Coming Soon - Career & Business - The Social</title>
+		<link rel="stylesheet" type="text/css" href="../../coming-soon/css/coming-soon.css"/>
+	</head>
+	
+	<body>
+		{% include header.html %}
+		
+		<div class="background_img"></div>
+		<div class="middle_text">
+			<h1>COMING SOON</h1>
+			<hr>
+			<p id="countDownTime">Time</p>
+		</div>
+		{% include articles/coming-soon/js/countDownTime_js.html %}
+		
+		{% include articles/js/nav_tab_js.html %}
+		
+		{% include header_js.html %}
+		{% include footer.html %}
+		{% include articles/coming-soon/js/removeTransitionContainer_js.html %}
+	</body>
+
+</html>

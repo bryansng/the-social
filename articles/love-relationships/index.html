@@ -1,0 +1,40 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		{% include_relative resources.html %}
+		<title>Love & Relationships - The Social</title>
+		<link rel="stylesheet" type="text/css" href="../css/articles.css"/>
+	</head>
+	
+	<body>
+		{% include header.html %}
+		
+		{% include articles/html/intro.html %}
+		
+		{% include articles/html/filter.html %}
+		
+		<div class="row">
+			<div class="column card">
+				<a href="six-ways-to-make-people-like-you/" class="a_deco">
+					<img src="six-ways-to-make-people-like-you/img/make_people_like_you.jpg"/>
+					<h2>Six Ways to Make People Like You</h2>
+					<h5><b>-</b></h5>
+					<h5>Love & Relationships, Dec 7, 2017</h5>
+					<p>
+						<br/>READ MORE
+					</p>
+				</a>
+			</div>
+		</div>
+		
+		{% include articles/html/pagination.html %}
+		{% include articles/js/nav_tab_js.html %}
+		
+		{% include header_js.html %}
+		{% include footer.html %}
+	</body>
+
+</html>

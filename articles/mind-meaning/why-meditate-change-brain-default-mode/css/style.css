@@ -1,0 +1,42 @@
+.content{
+	padding: 40px 200px;
+}
+
+.content h1{
+	padding: 40px 0;
+	font-family: 'articlesFont';
+}
+
+.content p{
+	font-family: 'articlesFont';
+	padding-bottom: 30px;
+}
+
+.content iframe{
+	position: relative;
+	
+	width: 100%;
+	height: 500px;
+	
+	padding-bottom: 30px;
+}
+
+.list_content_container p{
+	font-family: 'articlesFont';
+	padding-bottom: 0;
+}
+
+.list_content_container ol{
+	font-family: 'articlesFont';
+	padding-left: 80px;
+}
+
+.list_content_container ol li{
+	padding: 5px;
+}
+
+@font-face{
+	font-family: 'articlesFont';
+	src: url('../../../../fonts/Helvetica.ttf');
+}
+

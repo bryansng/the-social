@@ -1,0 +1,66 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+	<!--
+	In case, database allowed.
+	https://daveismyname.blog/creating-a-blog-from-scratch-with-php
+	http://smallbusiness.chron.com/database-52268.html
+	-->
+	<head>
+		{% include_relative resources.html %}
+		<title>Articles - The Social</title>
+		<link rel="stylesheet" type="text/css" href="css/articles.css"/>
+	</head>
+	
+	<body>
+		{% include header.html %}
+		
+		{% include articles/html/intro.html %}
+		
+		{% include articles/html/filter.html %}
+		
+		<div class="row">
+			<div class="column card">
+				<a href="love-relationships/six-ways-to-make-people-like-you/" class="a_deco">
+					<img src="love-relationships/six-ways-to-make-people-like-you/img/make_people_like_you.jpg" alt="Six Ways to Make People Like You"/>
+					<h2>Six Ways to Make People Like You</h2>
+					<h5><b>-</b></h5>
+					<h5>Love & Relationships, Dec 7, 2017</h5>
+					<p>
+						<br/>READ MORE
+					</p>
+				</a>
+			</div>
+			<div class="column card">
+				<a href="leadership-impact/be-leader-how-to-change-people-without-giving-offense-or-arousing-resentment/" class="a_deco">
+					<img src="leadership-impact/be-leader-how-to-change-people-without-giving-offense-or-arousing-resentment/img/team_meeting.jpg" alt="Be a Leader - How to Change People Without Giving Offense or Arousing Resentment"/>
+					<h2>Be a Leader - How to Change People Without Giving Offense or Arousing Resentment</h2>
+					<h5><b>-</b></h5>
+					<h5>Leadership & Impact, Sep 2, 2017</h5>
+					<p>
+						<br/>READ MORE
+					</p>
+				</a>
+			</div>
+			<div class="column card">
+				<a href="mind-meaning/why-meditate-change-brain-default-mode/" class="a_deco">
+					<img src="mind-meaning/why-meditate-change-brain-default-mode/img/meditate_1.jpg" alt="Why Meditate? - Changing your brain's default mode"/>;
+					<h2>Why Meditate? - Changing your brain's default mode</h2>
+					<h5><b>-</b></h5>
+					<h5>Mind & Meaning, Aug 17, 2017</h5>
+					<p>
+						<br/>READ MORE
+					</p>
+				</a>
+			</div>
+		</div>
+		
+		{% include articles/html/pagination.html %}
+		{% include articles/js/nav_tab_js.html %}
+		
+		{% include header_js.html %}
+		{% include footer.html %}
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		{% include_relative resources.html %}
+		<title>Mind & Meaning - The Social</title>
+		<link rel="stylesheet" type="text/css" href="../css/articles.css"/>
+	</head>
+	
+	<body>
+		{% include header.html %}
+		
+		{% include articles/html/intro.html %}
+		
+		{% include articles/html/filter.html %}
+		
+		<div class="row">
+			<div class="column card">
+				<a href="why-meditate-change-brain-default-mode/" class="a_deco">
+					<img src="why-meditate-change-brain-default-mode/img/meditate_1.jpg"/>
+					<h2>Why Meditate? - Changing your brain's default mode</h2>
+					<h5><b>-</b></h5>
+					<h5>Mind & Meaning, Aug 17, 2017</h5>
+					<p>
+						<br/>READ MORE
+					</p>
+				</a>
+			</div>
+		</div>
+		
+		{% include articles/html/pagination.html %}
+		{% include articles/js/nav_tab_js.html %}
+		
+		{% include header_js.html %}
+		{% include footer.html %}
+	</body>
+
+</html>
