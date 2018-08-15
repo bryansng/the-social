@@ -22,21 +22,19 @@
 	display: inline-block;
 	margin-left: 15px;
 	
-	/*
-	width: 49.4px;
-	*/
 	width: 3.98vw;
 	height: 0vw;
 	/*
+	width: 49.4px;
 	height: 49.4px;
 	*/
 }
 
 .sm_container{
+	padding: 2.4vw;
 	/*
 	padding: 30px;
 	*/
-	padding: 2.4vw;
 }
 
 .sm_circle{
