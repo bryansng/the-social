@@ -2,7 +2,7 @@
 
 Well-being website, aimed at the biophysical level of the self (i.e., social dynamics, self-improvement, self-actualization, self-discipline, etc). Beneficial for people of all ages who are interested in being better, or to be instilled with new possibilities.
 
-![Alt text](./readme-resources/img/web_1.png "TheSocial Homepage")
+![Alt text](./readme-resources/img/overview.png "TheSocial Homepage")
 
 &nbsp;
 ## Characteristics
